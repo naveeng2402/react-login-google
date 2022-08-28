@@ -1,10 +1,13 @@
-import { ReactComponent as ViteLogo } from "./assets/vite.svg";
+import { Route, Routes } from "react-router-dom";
+import { Home, Login, SignUp } from "./pages";
+
 function App() {
   return (
-    <div className="mx-auto text-center">
-      <ViteLogo className="mx-auto h-20 w-20" />
-      <h1>APP</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/sign-up" element={<SignUp />} />
+    </Routes>
   );
 }
 
