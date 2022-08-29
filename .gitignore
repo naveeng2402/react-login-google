@@ -1,0 +1,15 @@
+**/*.lock
+
+# dependencies
+node_modules
+
+build
+dist
+env
+*.pyc
+
+# misc
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
