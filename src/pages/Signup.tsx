@@ -16,7 +16,7 @@ const SignUp: FC = () => {
   const handleForm: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5000/sign-up", {
+    fetch("https://react-login-internshala.herokuapp.com/sign-up", {
       mode: "cors",
       credentials: "omit",
       headers: {
